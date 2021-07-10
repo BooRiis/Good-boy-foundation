@@ -1,0 +1,26 @@
+header {
+    display: flex;
+    align-items: center;
+    padding: 1em 12em;
+    background-color: #FEFEFE;
+    box-shadow: 0px 1px 0px rgba(0, 0, 0, 0.08);
+    & > * {
+        width: 50%;
+    }
+
+    h1 {
+        font-size: 1em;
+        font-weight: 600;
+        margin: 0;
+        color: #9F9F9F;
+    } 
+
+    .social-icons {
+        height: 1.625em;
+        text-align: right;
+        img {
+            height: 100%;
+            width: auto;
+        }
+    }
+}

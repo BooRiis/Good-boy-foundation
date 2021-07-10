@@ -1,5 +1,8 @@
 import React from 'react'
 
+// styles
+import '../assets/css/header.scss'
+
 //icons
 import fb from '../assets/imgs-icons/fb.svg'
 import ig from '../assets/imgs-icons/ig.svg'

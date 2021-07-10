@@ -10,6 +10,7 @@ import {useForm} from 'react-hook-form'
 
 //assets
 import '../node_modules/normalize.css/normalize.css'
+import './assets/css/app.scss'
 import './assets/css/style.scss'
 import bg from './assets/imgs-icons/doggo.png'
 

@@ -20,6 +20,7 @@ export function stepNumberOne() {
             <h1>Vyberte možnosť, ako chcete pomôcť</h1>
           {/* Form */}
             <form>
+                {/* Choose box */}
                 <div className="chooseRadioBox">
                     <label className="optionContainer" >
                         <input type="radio" name="donateDogShelter"  />
@@ -39,6 +40,55 @@ export function stepNumberOne() {
                             <h2>Chcem finančne prispieť celej nadácii</h2>
                         </div>
                     </label>
+                </div>
+                {/* Choose shelter */}
+                <div className="aboutShelter">
+                    <h2 className="title">O projekte</h2>
+                    <span className="scope">
+
+                    </span>
+                </div>
+                <div className="chooseShelter">
+                    <label htmlFor="dogShelter">Útolok</label>
+                    <select name="shelterName" id="shelterName" defaultValue="" required="">
+                        <option value="" disabled hidden> Vyberte útolok zo zoznamu</option>
+
+                    </select>
+                    <span className="arrow"></span>
+                </div>
+                <h2 className="title">Suma, ktorou chcete prispieť</h2>
+                <div className="amountSection">
+                    <label>
+                        <input type="radio" name="value" value="5" />
+                        <span className="chooseBtn">5€</span>
+                    </label>
+                    <label>
+                        <input type="radio" name="value" value="10" />
+                        <span className="chooseBtn">10€</span>
+                    </label>
+                    <label>
+                        <input type="radio" name="value" value="20" />
+                        <span className="chooseBtn">20€</span>
+                    </label>
+                    <label>
+                        <input type="radio" name="value" value="30" />
+                        <span className="chooseBtn">30€</span>
+                    </label>
+                    <label>
+                        <input type="radio" name="value" value="50" />
+                        <span className="chooseBtn">50€</span>
+                    </label>
+                    <label>
+                        <input type="radio" name="value" value="100" />
+                        <span className="chooseBtn">100€</span>
+                    </label>
+                    <label>
+                        <input type="radio" name="value" id="customInput" />
+                        <span className="chooseBtn"><input type="text" name="customValue" /> €</span>
+                    </label>
+                </div>
+                <div className="progress-button">
+                    <button>Pokračovať</button>
                 </div>
             </form>
         </div>

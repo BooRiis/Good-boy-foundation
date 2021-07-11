@@ -1,13 +1,17 @@
 import React from 'react'
 
+// style
+
+
 // logo
-import logo from '../assets/imgs-icons/logo.png'
+import logo from '../assets/imgs-icons/logo.svg'
+import '../assets/css/footer.scss'
 
 export function Footer() {
     return (
         <footer>
             <div className="logo">
-                <img src={logo} alt="" />
+                <img src={logo} alt="Logo Good Boy" />
             </div>
             <nav>
                 <h2>Nadácia Good Boy</h2>

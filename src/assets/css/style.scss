@@ -9,5 +9,39 @@ body {
     
 }
 
+h1 {
+  font-family: 'Hind', sans-serif;
+  font-size: 2.875em;
+  letter-spacing: 0.01em;
+  color: #000;
+}
 
-
+form {
+    input:-webkit-autofill,
+    input:-webkit-autofill:hover,
+    input:-webkit-autofill:focus {
+      -webkit-box-shadow: 0 0 0px 1000px #fff inset;
+      box-shadow: 0 0 0px 1000px #fff inset;
+      transition: background-color 5000s ease-in-out 0s;
+    }
+  }
+  
+  .err-message {
+    font-size: 0.825em!important;
+    position: absolute!important;
+    bottom: .725em!important;
+    left: .5em!important;
+    color: red!important;
+    &.check {
+      bottom: 1.785em!important;
+      left: 4.5em!important;
+    }
+  }
+  
+  button:disabled,
+  button[disabled],
+  button:disabled:hover,
+  button[disabled]:hover{
+    background: #9F9F9F;
+    cursor: default;
+  }

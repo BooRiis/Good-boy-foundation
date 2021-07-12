@@ -15,9 +15,9 @@ import bg from './assets/imgs-icons/doggo.png'
 
 //components
 import {NavBar} from './components/NavBar'
-import {stepNumberOne} from './components/Allinone/stepNumberOne'
-import {stepNumberTwo} from './components/Allinone/stepNumberTwo'
-import {stepNumberThree} from './components/Allinone/stepNumberThree'
+import {StepNumberOne} from './components/Allinone/StepNumberOne'
+import {StepNumberTwo} from './components/Allinone/StepNumberTwo'
+import {StepNumberThree} from './components/Allinone/StepNumberThree'
 import {Footer} from './components/Footer'
 
 
@@ -28,9 +28,9 @@ function App() {
         <div className="router-section">
           <main>
             <div className="route-form">
-              <Route exact path="/" component={stepNumberOne} />
-              <Route exact path="/step-two" component={stepNumberTwo} />
-              <Route exact path="/step-three" component={stepNumberThree} />
+              <Route exact path="/" component={StepNumberOne} />
+              <Route exact path="/step-two" component={StepNumberTwo} />
+              <Route exact path="/step-three" component={StepNumberThree} />
             </div>
             <div className="background-image">
               <img src={bg} alt="" />

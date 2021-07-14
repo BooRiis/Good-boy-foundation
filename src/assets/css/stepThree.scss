@@ -1,0 +1,74 @@
+.final-step {
+    margin-bottom: 4em;
+    h2.title {
+        font-size: 0.875em;
+    }
+
+    p {
+        font-size: 1em;
+        margin: 0;
+        margin-bottom: 1em;
+    }
+
+    label {
+        display: flex;
+        align-items: center;
+        margin-top: 3em;
+        padding-bottom: 2em;
+        position: relative;
+        cursor: pointer;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        cursor: pointer;
+
+        input {
+            position: absolute;
+            opacity: 0;
+            cursor: pointer;
+            height: 0;
+            width: 0;
+        }
+
+        .agree-term {
+            height: 2.185em;
+            width: 2.185em;
+            background-color: #fff;
+            border-radius: .5em;
+            border: .158em solid #f3e2d9;
+        }
+
+        &:hover ~ .agree-term {
+            background-color: red;
+        }
+
+        .agree-term:after {
+            content: "";
+            position: absolute;
+            display: none;
+        }
+
+        & input:checked ~ .agree-term:after {
+            display: block;
+        }
+
+        & .agree-term:after {
+            left: 1em;
+            top: 0.45em;
+            width: 0.65em;
+            height: 1.3em;
+            border: solid #ab7455;
+            box-sizing: border-box;
+            border-width: 0 .22em .22em 0;
+            -webkit-transform: rotate(45deg);
+            -ms-transform: rotate(45deg);
+            transform: rotate(45deg);
+        }
+
+        .agreement-text {
+            margin-left: .75em;
+            color: #2f2f2f;
+        }
+    }
+}

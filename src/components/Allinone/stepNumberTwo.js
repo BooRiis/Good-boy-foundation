@@ -19,6 +19,7 @@ import { yupResolver } from '@hookform/resolvers/yup'
 
 const phoneForCountries = /^((\\+[1-9]{1,4}[ \\-]*)|(\\([0-9]{2,3}\\)[ \\-]*)|([0-9]{2,4})[ \\-]*)*?[0-9]{3,4}?[ \\-]*[0-9]{3,4}?$/
 
+//form requirement
 const schema = Yup.object().shape({
     firstName: Yup.string().trim().transform(value => value === '' ? undefined : value).min(2, "Dĺžka musí byť viac ako 2 znaky!").max(30, "Dĺžka nemôže presahovať 30 znakov!"),
     lastName: Yup.string().min(2, "Dĺžka musí byť viac ako 2 znaky!").max(30, "Dĺžka nemôže presahovať 30 znakov!").required("Tento údaj je povinný"),
@@ -43,19 +44,20 @@ export const StepNumberTwo = () => {
         mode: "onBlur"
     })
 
+    //pushing data
     const onSubmit = (data) => {
         dispatch(setFirstName(data.firstName))
         dispatch(setLastName(data.lastName))
         dispatch(setEmail(data.email))
         dispatch(setPhone(data.phone))
-        history.push("./step-three")
+        history.push("./final-step")
     }
 
     return (
         <div>
             <div className="nav-dots">
-                <span className="active"></span>
                 <span></span>
+                <span className="active"></span>
                 <span></span>
             </div>
             <h1>Potrebujeme od Vás zopár informácií</h1>

@@ -99,7 +99,7 @@ export function StepNumberOne() {
                 <span></span>
                 <span></span>
             </div>
-            <h1>Vyberte možnosť, ako chcete pomôcť</h1>
+            <h1>Vyberte si možnosť, ako chcete pomôcť</h1>
           {/* Form */}
             <form onSubmit={handleSubmit(onSubmit)}>
                 {/* Choose box */}

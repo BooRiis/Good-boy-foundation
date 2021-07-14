@@ -10,7 +10,7 @@ export const stepFormSlice = createSlice({
     firstName: "",
     lastName: "",
     email: "",
-    phode: "",
+    phone: "",
     country: "+421"
   },
   reducers: {
@@ -21,7 +21,7 @@ export const stepFormSlice = createSlice({
     setFirstName: (state, action) => {state.firstName = action.payload},
     setLastName: (state, action) => {state.lastName = action.payload},
     setEmail: (state, action) => {state.email = action.payload},
-    setPhone: (state, action) => {state.email = action.payload},
+    setPhone: (state, action) => {state.phone = action.payload},
     toggleCountry: (state, action) => {state.country = (state.country === "+421") ? state.country = "+420" : state.country = "+421" ; console.log(state.country)}
   }
 })
